@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		33F078601D3E37E7006418F8 /* BGBlurViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F0785F1D3E37E7006418F8 /* BGBlurViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F078681D3E3816006418F8 /* BGBlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F078671D3E3816006418F8 /* BGBlurViewController.swift */; };
+		33F0786A1D3E389A006418F8 /* UIImage+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F078691D3E389A006418F8 /* UIImage+Blur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33F0785C1D3E37E7006418F8 /* BGBlurViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BGBlurViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F0785F1D3E37E7006418F8 /* BGBlurViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGBlurViewController.h; sourceTree = "<group>"; };
 		33F078611D3E37E7006418F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F078671D3E3816006418F8 /* BGBlurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGBlurViewController.swift; sourceTree = "<group>"; };
+		33F078691D3E389A006418F8 /* UIImage+Blur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Blur.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				33F0785F1D3E37E7006418F8 /* BGBlurViewController.h */,
 				33F078611D3E37E7006418F8 /* Info.plist */,
+				33F078671D3E3816006418F8 /* BGBlurViewController.swift */,
+				33F078691D3E389A006418F8 /* UIImage+Blur.swift */,
 			);
 			path = BGBlurViewController;
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F078681D3E3816006418F8 /* BGBlurViewController.swift in Sources */,
+				33F0786A1D3E389A006418F8 /* UIImage+Blur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,28 +238,33 @@
 		33F078651D3E37E7006418F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BGBlurViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.morisho0.BGBlurViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		33F078661D3E37E7006418F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BGBlurViewController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.morisho0.BGBlurViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
